@@ -1,0 +1,16 @@
+/*
+    ir a google fonts https://fonts.google.com/
+    - seleccionar tipografía
+    - pulsar el botón celeste que dice "Get font"
+    - pulsar el botón celeste que dice "Get embed code"
+    - seleccionar la opción "@import"
+    - copiar el @import()
+    - pegar en el css
+    - generar una regla para body
+    - copiar y pegar el atributo font-family
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Roboto Condensed", serif;
+}
