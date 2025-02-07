@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #0D0D1C;
     color: #EBDCEF;
@@ -11,12 +17,41 @@ header{
     height: 96px;
     margin: auto;
     background-color: #14132A;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+    header nav a{
+        margin: 12px;
+        font-size: 24px;
+        color: #EBDCEF;
+        text-decoration: none;  /* quitar subrayado */ 
+    }
+
 main{
     width: 1200px;
     min-height: 760px;
     margin: auto;
 }
+
+/* sección hero-banner */
+    #hero{
+        height: 448px;
+        background-image: url(../imgs/hero-banner.jpg);
+        display: flex;
+        align-items: center;
+    }
+
+        #hero h1{
+            width: 520px;
+            padding: 8px 24px;
+            margin-left: 72px;
+            background-color: hsla(240, 37%, 8%, 50%);
+            font-size: 32px;
+        }
+
+
 footer{
     width: 1200px;
     height: 148px;
