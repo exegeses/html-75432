@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Imágenes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .carousel {
+            width: 100%;
+            max-width: 600px;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .navigation label {
+            width: 12px;
+            height: 12px;
+            background-color: #ddd;
+            display: inline-block;
+            margin: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #slide1:checked ~ .slides {
+            transform: translateX(0);
+        }
+
+        #slide2:checked ~ .slides {
+            transform: translateX(-100%);
+        }
+
+        #slide3:checked ~ .slides {
+            transform: translateX(-200%);
+        }
+
+        #slide1:checked ~ .navigation label[for="slide1"],
+        #slide2:checked ~ .navigation label[for="slide2"],
+        #slide3:checked ~ .navigation label[for="slide3"] {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="carousel">
+    <input type="radio" id="slide1" name="slides" checked>
+    <input type="radio" id="slide2" name="slides">
+    <input type="radio" id="slide3" name="slides">
+
+    <div class="slides">
+        <img src="imgs/paris.jpeg" alt="Imagen 1">
+        <img src="imgs/amterdam.jpeg" alt="Imagen 2">
+        <img src="imgs/londres.jpeg" alt="Imagen 3">
+    </div>
+
+    <div class="navigation">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+    </div>
+</div>
+
+</body>
+</html>
