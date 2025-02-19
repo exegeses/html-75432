@@ -71,6 +71,24 @@ main{
             font-weight: 600;
         }
 
+/* sección soluciones */
+    #soluciones{
+        margin-top: 56px;
+    }
+
+        #soluciones article{
+            margin-top: 56px;
+            display: flex;
+            align-items: center;
+        }
+            #soluciones article div{
+                padding-left: 80px;
+            }
+                #soluciones article div h2{
+                    font-weight: 600;
+                    margin-bottom: 24px;
+                }
+
 
 footer{
     width: 1200px;

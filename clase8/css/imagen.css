@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+}
+main{
+    margin: 80px 0px;
+    background-color: hsl(286, 94%, 6%);
+    padding: 40px;
+}
+    #contenido{
+        width: 360px;
+        background-color: hsl(286, 50%, 80%);
+    }
+        #contenido figure{
+            width: 360px;
+            height: 360px;
+            background-image: url(../imgs/london.jpg);
+            background-size: 1200px;
+            background-position: -24px center;
+            /*background-color: hsl(207, 87%, 69%); */
+        }
+        #contenido p{
+            margin: 20px;
+            padding: 32px;
+            background-color: hsl(0, 0%, 26%);
+            color: #fff;
+        }
